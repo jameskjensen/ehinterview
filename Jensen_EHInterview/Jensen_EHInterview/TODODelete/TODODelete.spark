@@ -1,0 +1,10 @@
+﻿<viewdata model="Jensen_EHInterview.TODO.TODOViewModel" />
+<content:main>
+  <form action="Delete" method="POST">
+    <div>
+      Click Delete to confirm deletion of the TODO item:
+      <input id="SomeId" type="text" width="500" name="Task" value='${Model.Task}' readonly="true"/>
+      <input type="Submit" value="Delete"/>
+    </div>    
+  </form>
+</content:main>

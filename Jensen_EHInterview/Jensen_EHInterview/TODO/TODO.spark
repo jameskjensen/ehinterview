@@ -1,0 +1,10 @@
+﻿<viewdata model="Jensen_EHInterview.TODO.TODOViewModel" />
+<content:main>
+<form action="Add" method="POST">
+    <div>
+      Add a new TODO item:
+      <input id="SomeId" type="text" width="500" name="Task"/>
+      <input type="Submit" value="Add"/>
+    </div>
+  </form>
+</content:main>

@@ -1,0 +1,11 @@
+﻿<viewdata model="Jensen_EHInterview.TODO.TODOViewModel" />
+<content:main>
+  <form action="Edit" method="POST" model="Jensen_EHInterview.TODO.TODOInputModel">
+    <div>
+      Edit TODO item:
+      <input id="SomeId" type="text" width="500" name="EditedTask" value='${Model.Task}'/>
+      <input id="SomeId" width="500" name="OriginalTask" value='${Model.Task}' type="hidden"/>
+      <input type="Submit" value="Save"/>
+    </div>    
+  </form>
+</content:main>

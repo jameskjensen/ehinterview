@@ -1,0 +1,31 @@
+<viewdata model="Jensen_EHInterview.HomeModel" />
+
+<content:main>
+
+  <h1>Welcome!</h1>
+  <a href="Jensen_EHInterview/todo/get">Add new TODO Item</a>
+  <div>
+    <h4>Here is the list of your TODO items:</h4>
+    <table>
+      <for each="var todo in Model.TODOList" >
+        <tr>
+          <td>
+            ${todo}
+          </td>
+          <td>
+            <form action="jensen_ehinterview/todoedit/get" method="POST" model="Jensen_EHInterview.TODO.TODOViewModel">
+              <input id="SomeId" type="hidden" width="500" name="Task" value='${todo}'/>
+              <input type="Submit" value="Edit"/>
+            </form>
+          </td>
+          <td>
+            <form action="jensen_ehinterview/tododelete/get" method="POST" model="Jensen_EHInterview.TODO.TODOViewModel">
+              <input id="SomeId" type="hidden" width="500" name="Task" value='${todo}'/>
+              <input type="Submit" value="Delete"/>
+            </form>
+          </td>
+        </tr>
+      </for>
+    </table>
+  </div>
+</content:main>
